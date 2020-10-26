@@ -1,0 +1,163 @@
+<!doctype html>
+<html ng-app="exampleApp">
+<head>
+<script src="jquery-1.11.2.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title> קינוחים-MatKon</title>
+    <!-- Example for relative path -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- Example for absolute path -->
+    
+	<style>
+.vertical-menu {
+  width: 900px;
+  left:1090px;
+  position: fixed;
+}
+
+.button {
+  background-color: #D2691E; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.vertical-menu a {
+  background-color: brown;
+  color: white;
+  display: block;
+  padding: 12px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: pink;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+{
+  margin: 0px;
+  padding: 0px;
+}
+h3{
+margin:0px;
+	color : black;
+	font-size:48px;
+}
+h6{
+margin:0px;
+	color : black;
+	font-size:22px;
+}
+body{
+  text-align: center;
+  font-size: 16px;
+}
+footer{
+	position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+nav.b{
+	float:left;
+    width: 100%;
+    color: black;
+    text-align: center;
+
+}
+
+.search{
+	left: auto;
+    position: fixed;
+}
+
+ul.a{
+list-style-type:none;
+}
+resultList li {
+	  left:50%;
+}
+input[type=text], select {
+  direction:RTL; 
+}
+
+</style>
+    <script src="/shared/js/scroll-to-top.js"></script>
+    <script src="/shared/js/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/example-list/example-list.module.js"></script>
+    <script src="app/example-list/example-list.component.js"></script>
+    <script src="app/image-list/image-list.module.js"></script>
+    <script src="app/image-list/image-list.component.js"></script>
+    <script src="app/size-list/size-list.module.js"></script>
+    <script src="app/size-list/size-list.component.js"></script>
+    <script src="app/aviv-list/aviv-list.module.js"></script>
+    <script src="app/aviv-list/aviv-list.component.js"></script>
+	
+
+</head>
+
+<body>
+<header class="col-6 center">
+                 <h3>קינוחים-MatKon</h3>
+	
+</header>
+    <nav>
+        <ul>
+            <li><a href="About.html">אודות</a></li>
+            <li><a href="Contact.html">צור קשר</a></li>
+			<li><a href="Upload_Recepie.html">העלאת מתכון</a></li>
+            <li><a href="index.html">דף הבית</a></li>
+        </ul>
+		
+    </nav>
+	
+	
+	
+	<div name="resultList">
+	<br><br>
+		
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		
+		<ul class="a">
+            <li><img src="shared\images\16.jpg" alt="fish" style="width:290px;height:200px;"></li>
+			<a href="Recepie.html">קינוח כוסות קינדר וקצפת - קרין רפאלוב </a>
+			<br><br>
+            
+			<li><img src="shared\images\17.jpg" alt="fish" style="width:290px;height:200px;"></li>
+			<a href="Recepie.html">קינוח כוסות גבינה ופירורים - עלמה פרץ </a>
+			<br><br>
+		  
+        </ul>
+		
+	</div>
+	
+	
+	
+	<footer> כל הזכויות שמורות לבעלי האתר: נתנאל קלונטר ואוראל קקון 2019</footer>
+	
+<main class="col-9 center">
+
+</main>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html ng-app="exampleApp">
+<head>
+<script src="jquery-1.11.2.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>MatKon</title>
+    <!-- Example for relative path -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- Example for absolute path -->
+    
+	<style>
+.vertical-menu {
+  width: 900px;
+  left:1090px;
+  position: fixed;
+}
+
+.button {
+  background-color: #D2691E; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.vertical-menu a {
+  background-color: brown;
+  color: white;
+  display: block;
+  padding: 12px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: pink;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+{
+  margin: 0px;
+  padding: 0px;
+}
+h3{
+margin:0px;
+	color : black;
+	font-size:48px;
+}
+h6{
+margin:0px;
+	color : black;
+	font-size:22px;
+}
+body{
+  text-align: center;
+  font-size: 16px;
+}
+footer{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+nav.b{
+	float:left;
+    width: 100%;
+    color: black;
+    text-align: center;
+
+}
+
+.search{
+	left: auto;
+    position: fixed;
+}
+
+li {
+	  display: block;
+	  position: relative;
+	  float: bottom;
+	  background: black;
+	  width:24%;
+ 
+}
+input[type=text], select {
+  
+  direction:RTL;
+ 
+  
+}
+
+</style>
+    <script src="/shared/js/scroll-to-top.js"></script>
+    <script src="/shared/js/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/example-list/example-list.module.js"></script>
+    <script src="app/example-list/example-list.component.js"></script>
+    <script src="app/image-list/image-list.module.js"></script>
+    <script src="app/image-list/image-list.component.js"></script>
+    <script src="app/size-list/size-list.module.js"></script>
+    <script src="app/size-list/size-list.component.js"></script>
+    <script src="app/aviv-list/aviv-list.module.js"></script>
+    <script src="app/aviv-list/aviv-list.component.js"></script>
+	
+
+</head>
+
+<body>
+<header class="col-6 center">
+                 <h3>MatKon</h3>
+	<h6>!מחפש מתכון? אנחנו פה בשבילך</h6>
+<h6>!באתר שלנו תמצא מגוון מתכונים נפלאים בלי להתאמץ </h6>
+	
+</header>
+    <nav>
+        <ul>
+            <li><a href="About.html">אודות</a></li>
+            <li><a href="Contact.html">צור קשר</a></li>
+			<li><a href="Upload_Recepie.html">העלאת מתכון</a></li>
+            <li><a href="index.html">דף הבית</a></li>
+        </ul>
+		
+    </nav>
+	
+	<nav class="b">
+	<br>
+		<div class="vertical-menu" >
+		    <li style="background-color:brown;"><a href="#" >:קטגוריות</a></li>
+			<li style="background-color:brown;"><a href="Category_Pasta.html">פסטות</a></li>
+			<li style="background-color:brown;"><a href="Category_Meat.html">בשרים</a></li>
+			<li style="background-color:brown;"><a href="Category_Salad.html">סלטים</a></li>
+			<li style="background-color:brown;"><a href="Category_Soup.html">מרקים</a></li>
+			<li style="background-color:brown;"><a href="Category_Cookfood.html">תבשילים</a></li>
+			<li style="background-color:brown;"><a href="Category_Fish.html">דגים</a></li>
+			<li style="background-color:brown;"><a href="Category_Deseret.html">קינוחים</a></li>     
+        </div>
+		
+    </nav>
+	
+	<div>
+	<br>
+		
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<form action="Desktop\Result_page.html" method="GET">
+	<div class="search">
+		<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:חיפוש</h2> 
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="searchId" name="searchInput" size="35px" />
+		
+		<br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="button" value="חפש" size="8px" onclick="Result_page()" />
+	<script>
+	function Result_page(){
+		//var id=document.getElementById("searchId").value;
+		//localStorage.setItem("searchId",id);
+		window.location.href = "Result_page.html";
+	} 
+</script>
+	</div>
+	</form>
+		<br><img src="shared\images\1.jpg" alt="fish" style="width:290px;height:200px;">
+		<img src="shared\images\2.jpg" alt="ribs" style="width:290px;height:200px;">
+		<br><img src="shared\images\3.jpg" alt="pasta" style="width:290px;height:200px;">
+		<img src="\shared\images\4.jpg" alt="salad" style="width:290px;height:200px;">
+	</div>
+	
+	
+	
+	<footer> כל הזכויות שמורות לבעלי האתר: נתנאל קלונטר ואוראל קקון 2019</footer>
+	
+<main class="col-9 center">
+
+</main>
+
+
+
+
+</body>
+
+</html>

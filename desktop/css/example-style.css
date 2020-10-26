@@ -1,0 +1,10 @@
+/* 
+	Import example 
+	Notice how the path begins from the same directory example-style.css is in.
+*/
+
+@import 'nav-dropdown.css';
+
+body{
+	background-color : #FFDEAD;
+}
